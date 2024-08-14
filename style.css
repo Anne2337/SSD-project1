@@ -1,0 +1,50 @@
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+    max-width: 950px;
+    max-height: 500px;
+    padding-left: 20px;
+    padding-top: 5px;
+
+
+    background-color: rgb(153, 151, 151);
+}
+
+.line-with-text {
+    position: relative;
+    margin-top: 20px;
+}
+
+.user-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid blue;
+    font-size: 16px;
+    padding: 5px 0;
+    background-color: transparent;
+    color: black;
+    border-radius: 0; /* Remove border radius */
+    outline: none; /* Remove the default outline when the input is focused */
+}
+
+.blue-line {
+    display: none; /* Hide the <hr> line since the input border will act as the line */
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+    border:none;
+    border-radius:0;
+}
+#canceltxt,
+#sendtxt {
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    color: blue; /* Set text color to blue */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 5px 10px; /* Optional: Add some padding for better click area */
+}

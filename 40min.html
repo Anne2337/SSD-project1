@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guhamagara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        ishyura 100Rwf = 40min + 10SMS ukoresheje
+        <p class="para">1) inite</p>
+        <p class="para">2) MoMo</p>
+        <p class="para">0) Gusubira inyuma</p>
+        <br>
+        <div class="line-with-text">
+            <input type="text" class="user-input" id="usertxt1">
+            <hr class="blue-line">
+        </div>
+        <div class="button">
+            <button id="canceltxt1">Cancel</button>
+            <button id="sendtxt1">Send</button>
+        </div> 
+        <script>
+            document.getElementById('canceltxt1').addEventListener('click', function() {
+                document.getElementById('usertxt1').value = ''; // Clears the input field
+            });
+
+            document.getElementById('sendtxt1').addEventListener('click', function() {
+                const usertxt1 = document.getElementById('usertxt1').value.trim(); // Trim input value
+                console.log(usertxt1); // Log the input value to the console
+
+                if (usertxt1 === "1") {
+                    console.log("Redirecting to 40min.html"); // Log redirection
+                    window.location.href = "/40min.html"; // Redirect to the corresponding file
+                } else {
+                    console.log("Invalid choice: " + usertxt1);
+                    alert("Invalid choice. Please enter a valid number.");
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
